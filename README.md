@@ -25,13 +25,15 @@ az login
 
 
 
-``powershell`` : 
+``PowerShell`` : 
 
 ```powershell
 Connect-AzureRmAccount
 ```
 
 
+
+---
 
 
 
