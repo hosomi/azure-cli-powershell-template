@@ -1,17 +1,35 @@
-# azure-cli-powershell-template
+# Account
 
-Azure CLI(AZ), Azure PowerShell.  
+Azure サブスクリプションを管理します。  
+``多数のオプションがあります。``  
 
-:link: [Azure CLI の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/)  
-:link: [Overview of Azure PowerShell | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure)  
-:link: [Azure Cloud Shell の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/cloud-shell/overview)  
+## Azure CLI
 
-## Types
+:link: [az account | Microsoft Docs](https://docs.microsoft.com/en-us/cli/azure/account?view=azure-cli-latest)
 
-| Type                           | Azure CLI                 | Azure PowerShell  
-| ------------------------------ | ------------------------- | -----------------------  
-| [Sign in](signin/)             | ``az login``              | ``Connect-AzureRmAccount``
-| [Account](account/)            | ``az account``            | ``Get-AzContext``
+``az account list`` : ログインしているアカウントのサブスクリプションのリストを取得します。  
+
+```bash
+$ az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+********-****-****-****-************
+```
+
+``--query`` : [JMESPath](https://jmespath.org/) クエリでサブスクリプション名に Concierge Subscription を条件に指定して結果を tenantId のみにする。  
+``-out`` : 出力結果を tsv に。
+
+## Azure PowerShell
+
+:link: [Get-AzContext (Az.Accounts) | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/az.accounts/get-azcontext)
+
+``Get-AzContext`` : 
+
+```powershell
+PS > (Get-AzContext).Tenant.Id
+********-****-****-****-************
+```
+
+
+
 
 
 
