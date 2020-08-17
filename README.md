@@ -10,7 +10,7 @@ Azure CLI(AZ), Azure PowerShell.
 
 | Type                           | Azure CLI                 | Azure PowerShell  
 | ------------------------------ | ------------------------- | -----------------------  
-| [Sign in](signin/)             | ``az login``              | ``Connect-AzureRmAccount``
+| [Sign in](signin/)             | ``az login``              | ``Connect-AzAccount``
 | [Account](account/)            | ``az account``            | ``Get-AzContext``
 
 
