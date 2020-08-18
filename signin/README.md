@@ -39,19 +39,15 @@ The following tenants don't contain accessible subscriptions. Use 'az login --al
 
 :link: [Sign in with Azure PowerShell | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/azurerm/authenticate-azureps)
 
-``Connect-AzureRmAccount`` : 
+``Connect-AzAccount`` : 
 
 ```powershell
-PS > Connect-AzureRmAccount
+PS > Connect-AzAccount
 
-Account          : ****************************
-SubscriptionName : Concierge Subscription
-SubscriptionId   : ********-****-****-****-************
-TenantId         : ********-****-****-****-************
-Environment      : AzureCloud
+Account                    SubscriptionName       TenantId                             Environment
+-------                    ----------------       --------                             -----------
+**************************** Concierge Subscription ********-****-****-****-************ AzureCloud
 ```
-
-
 
 
 
