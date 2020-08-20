@@ -13,6 +13,7 @@ Azure CLI(AZ), Azure PowerShell.
 | [Sign in](signin/)             | ``az login``              | ``Connect-AzAccount``
 | [Account](account/)            | ``az account``            | ``Get-AzContext``
 | [Storage](storage/)            | ``az storage account``    | ``New-AzStorageAccount``
+| [VM](vm/)                      | ``az vm create``          | ``New-AzVM``
 
 
 
