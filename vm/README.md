@@ -13,7 +13,7 @@ Azure 仮想マシンへの操作。
 ``NSG`` : ネットワーク セキュリティ グループ  
 
 :link: [Azure ネットワーク セキュリティ グループの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/virtual-network/security-overview)  
-:link: Azure ネットワーク セキュリティ グループを作成、変更、削除する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/virtual-network/manage-network-security-group)  
+:link: [Azure ネットワーク セキュリティ グループを作成、変更、削除する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/virtual-network/manage-network-security-group)  
 
 
 ---
