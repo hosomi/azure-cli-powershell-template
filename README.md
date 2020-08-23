@@ -15,6 +15,7 @@ Azure CLI(AZ), Azure PowerShell.
 | [Storage](storage/)            | ``az storage account``    | ``New-AzStorageAccount``
 | [VM](vm/)                      | ``az vm create``          | ``New-AzVM``
 | "                              | ``az vm show``            | ``Get-AzVM``
+| "                              | ``az vm open-port``       | ``Set-AzNetworkSecurityGroup``
 
 
 
