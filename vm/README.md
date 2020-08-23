@@ -1,12 +1,20 @@
 # VM
 
 Azure 仮想マシンへの操作。  
-　  
-``まずは作成のみ、他の操作は随時追記します。``  
-　  
-## Azure CLI
+
+| No. | Type                           | 1. Azure CLI              | 2. Azure PowerShell  
+| --: | ------------------------------ | ------------------------- | -----------------------  
+| 1   | VM の作成                      | az vm create              | New-AzVM
+| 2   | VM の確認                      | az vm show                | Get-AzVM
+
+---
+
+## 1. Azure CLI
 
 :link: [az vm | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/vm)  
+
+### 1.1 az vm create
+
 :link: [az vm # create | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/vm#az-vm-create)  
 :link: [クイック スタート - Azure CLI を使用して Windows VM を作成する - Azure Windows Virtual Machines | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/quick-create-cli)  
 
@@ -60,8 +68,62 @@ Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.15.0-1092-azure x86_64)
 azureuser@MeanStack:~$
 ```
 
+### 1.2 az vm show
 
-## Azure PowerShell
+:link: [az vm # show | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/vm#az-vm-show)  
+
+``az vm show`` :   
+
+``--resource-group`` : 既存のリソースグループを指定。  
+``--name `` : 対象の VM 名。  
+
+```bash
+$ az vm show \
+>   --resource-group *****-********-****-****-****-************ \
+>   --name MeanStack
+{
+  "additionalCapabilities": null,
+  "availabilitySet": null,
+  "billingProfile": null,
+  "diagnosticsProfile": null,
+  "evictionPolicy": null,
+  "extensionsTimeBudget": null,
+  "hardwareProfile": {
+    "vmSize": "Standard_DS1_v2"
+  },
+  "host": null,
+  "hostGroup": null,
+
+# ~ 省略
+
+```
+
+応用として引数 ``--query`` を指定することによって出力内容を加工できます。  
+詳しくは [Query command results with Azure CLI | Microsoft Docs](https://docs.microsoft.com/en-us/cli/azure/query-azure-cli) を参照してください。  
+
+サンプルとして対象 VM のパブリック IP アドレスを取得したい場合は次のように指定します。  
+
+```bash
+$ az vm show \
+>   --resource-group *****-********-****-****-****-************ \
+>   --name MeanStack \
+>   --show-details \
+>   --query [publicIps] \
+>   -o tsv
+***.**.*.***
+```
+
+パブリック IP アドレスのみ出力されます。  
+
+
+
+---
+
+## 2. Azure PowerShell
+
+:link: [Az.Compute Module | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.compute/#virtual-machines)  
+
+### 2.1 New-AzVM
 
 :link: [New-AzVM (Az.Compute) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.compute/new-azvm)  
 :link: [Azure 仮想マシンの PowerShell のサンプル - Azure Windows Virtual Machines | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/powershell-samples)  
@@ -78,7 +140,7 @@ azureuser@MeanStack:~$
   [Quickstart - Create a Linux VM with Azure PowerShell - Azure Linux Virtual Machines | Microsoft Docs](https://docs_microsoft_com.it.overbrowser.com/nb-no/azure/virtual-machines/linux/quick-create-powershell#create-ssh-key-pair)  
 
 ```powershell
-New-AzVM `
+PS > New-AzVM `
   -ResourceGroupName *****-********-****-****-****-************ `
   -Name MeanStack `
   -Image Canonical:UbuntuServer:16.04-LTS:latest `
@@ -104,13 +166,37 @@ StorageProfile           : {ImageReference, OsDisk, DataDisks}
 FullyQualifiedDomainName : meanstack-******.westus.cloudapp.azure.com
 ```
 
+### 2.2 Get-AzVM
+
+:link: [Get-AzVM (Az.Compute) | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/az.compute/get-azvm)  
 
 
+``Get-AzVM`` :  
+``-ResourceGroupName`` : 既存のリソースグループを指定。  
+``-Name`` : 対象の VM 名。  
+
+```powershell
+PS > Get-AzVM `
+>>   -ResourceGroupName *****-********-****-****-****-************ `
+>>   -Name MeanStack
 
 
-
-
-
+ResourceGroupName : *****-********-****-****-****-************
+Id                : /subscriptions/********-****-****-****-************/resourceGroups/*****-********-****-****-****-************
+e7-254448cbde2c/providers/Microsoft.Compute/virtualMachines/MeanStack
+VmId              : f0abdbd2-769c-4e95-b7e4-c2ff573347b7
+Name              : MeanStack
+Type              : Microsoft.Compute/virtualMachines
+Location          : westus
+Tags              : {}
+Extensions        : {DependencyAgent, MMAExtension}
+HardwareProfile   : {VmSize}
+NetworkProfile    : {NetworkInterfaces}
+OSProfile         : {ComputerName, AdminUsername, LinuxConfiguration, Secrets, AllowExtensionOperations, RequireGu
+estProvisionSignal}
+ProvisioningState : Succeeded
+StorageProfile    : {ImageReference, OsDisk, DataDisks}
+```
 　  
 　  
 　  
