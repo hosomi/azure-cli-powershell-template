@@ -8,15 +8,16 @@ Azure CLI(AZ), Azure PowerShell.
 
 ## Types
 
-| Type                                | Azure CLI                       | Azure PowerShell  
-| ----------------------------------- | ------------------------------- | -----------------------  
-| [Sign in](signin/)                  | ``az login``                    | ``Connect-AzAccount``
-| [Account](account/)                 | ``az account``                  | ``Get-AzContext``
-| [Storage](storage/)                 | ``az storage account``          | ``New-AzStorageAccount``
-| [VM](vm/)                           | ``az vm create``                | ``New-AzVM``
-| "                                   | ``az vm show``                  | ``Get-AzVM``
-| "                                   | ``az vm open-port``             | ``Set-AzNetworkSecurityGroup``
-| [App Service Plan](appservice-plan/) | ``az appservice plan create``   | ``New-AzAppServicePlan``
+| Type                                      | Azure CLI                       | Azure PowerShell  
+| ----------------------------------------- | ------------------------------- | -----------------------  
+| [Sign in](signin/)                        | ``az login``                    | ``Connect-AzAccount``
+| [Account](account/)                       | ``az account``                  | ``Get-AzContext``
+| [Credentials within](credentials-within/) | ``az ad sp create-for-rbac``    | ``Save-AzContext``
+| [Storage](storage/)                       | ``az storage account``          | ``New-AzStorageAccount``
+| [VM](vm/)                                 | ``az vm create``                | ``New-AzVM``
+| "                                         | ``az vm show``                  | ``Get-AzVM``
+| "                                         | ``az vm open-port``             | ``Set-AzNetworkSecurityGroup``
+| [App Service Plan](appservice-plan/)      | ``az appservice plan create``   | ``New-AzAppServicePlan``
 
 
 
