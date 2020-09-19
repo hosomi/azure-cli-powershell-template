@@ -18,7 +18,7 @@ Azure CLI(AZ), Azure PowerShell.
 | "                                         | ``az vm show``                  | ``Get-AzVM``
 | "                                         | ``az vm open-port``             | ``Set-AzNetworkSecurityGroup``
 | [App Service Plan](appservice-plan/)      | ``az appservice plan create``   | ``New-AzAppServicePlan``
-
+| [Web Apps](webapps)                       | ``az webapp``                   | 
 
 
 
