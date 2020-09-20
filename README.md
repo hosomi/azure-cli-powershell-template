@@ -3,22 +3,17 @@
 Azure CLI(AZ), Azure PowerShell.  
 
 :link: [Azure CLI の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/)  
-:link: [Overview of Azure PowerShell | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure)  
-:link: [Azure Cloud Shell の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/cloud-shell/overview)  
+:link: [Azure PowerShell の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure)  
+``非推奨`` :link: [Azure PowerShell の概要 - AzureRM | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/azurerm/overview) → [新しい Azure PowerShell Az モジュールの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/new-azureps-module-az?view=azps-4.6.1)  
+
+
 
 ## Types
 
-| Type                                      | Azure CLI                       | Azure PowerShell  
-| ----------------------------------------- | ------------------------------- | -----------------------  
-| [Sign in](signin/)                        | ``az login``                    | ``Connect-AzAccount``
-| [Account](account/)                       | ``az account``                  | ``Get-AzContext``
-| [Credentials within](credentials-within/) | ``az ad sp create-for-rbac``    | ``Save-AzContext``
-| [Storage](storage/)                       | ``az storage account``          | ``New-AzStorageAccount``
-| [VM](vm/)                                 | ``az vm create``                | ``New-AzVM``
-| "                                         | ``az vm show``                  | ``Get-AzVM``
-| "                                         | ``az vm open-port``             | ``Set-AzNetworkSecurityGroup``
-| [App Service Plan](appservice-plan/)      | ``az appservice plan create``   | ``New-AzAppServicePlan``
-| [Web Apps](webapps)                       | ``az webapp``                   | 
+| Type                                      | Azure CLI                       | Azure PowerShell(Az モジュール)                | AzureRM (``*1``)
+| ----------------------------------------- | ------------------------------- | ---------------------------------------------- | ----------------
+| Sign in                                   | [az login](signin/az.md)        | [Connect-AzAccount](signin/az-powershell.md)   | Login-AzureRmAccount
+
 
 
 
