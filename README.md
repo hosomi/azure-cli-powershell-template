@@ -4,18 +4,18 @@ Azure CLI(AZ), Azure PowerShell.
 
 :link: [Azure CLI の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/)  
 :link: [Azure PowerShell の概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure)  
-:link: ``非推奨`` [Azure PowerShell の概要 - AzureRM | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/azurerm/overview)  
-→ [新しい Azure PowerShell Az モジュールの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/new-azureps-module-az?view=azps-4.6.1)  
+:link: ``*1 非推奨`` [Azure PowerShell の概要 - AzureRM | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/azurerm/overview)  
+
 
 
 
 ## Types
 
-| Type                                      | Azure CLI                       | Azure PowerShell(Az モジュール)                | AzureRM (``*1``)
+| Type                                      | Azure CLI                       | Azure PowerShell(Az モジュール)                | AzureRM (``*1 非推奨``)
 | ----------------------------------------- | ------------------------------- | ---------------------------------------------- | ----------------
 | Sign in                                   | [az login](signin/az.md)        | [Connect-AzAccount](signin/az-powershell.md)   | Login-AzureRmAccount
 
-
+``*1 非推奨`` [新しい Azure PowerShell Az モジュールの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/new-azureps-module-az?view=azps-4.6.1)  
 
 
 
