@@ -1,4 +1,4 @@
-# azure-cli-powershell-template
+# Azure CLI - Azure PowerShell
 
 Azure CLI(AZ), Azure PowerShell.  
 
@@ -13,7 +13,9 @@ Azure CLI(AZ), Azure PowerShell.
 
 | Type                                      | Azure CLI                       | Azure PowerShell(Az モジュール)                | AzureRM (``*1 非推奨``)
 | ----------------------------------------- | ------------------------------- | ---------------------------------------------- | ----------------
-| Sign in                                   | [az login](signin/az.md)        | [Connect-AzAccount](signin/az-powershell.md)   | Login-AzureRmAccount
+| Sign in                                   | [az login](login/az.md)        | [Connect-AzAccount](login/az-powershell.md)   | Login-AzureRmAccount
+| Manage Subscription                       | [az account](account/az.md)     | [Get-AzSubscription, Set-AzContext](account/az-powershell.md) | 
+
 
 ``*1 非推奨`` [新しい Azure PowerShell Az モジュールの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/new-azureps-module-az?view=azps-4.6.1)  
 
