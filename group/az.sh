@@ -1,8 +1,11 @@
-# リソースグループ削除。
+# リソースグループの一覧表示。
+az group list
+
+# リソースグループの作成。
 az group create \
   --location <location> \
   --name <name>
 
-# リソースグループ削除。
+# リソースグループの削除。
 az group delete \
   --name <name>
