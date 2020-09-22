@@ -6,7 +6,9 @@
 
 ### Get-AzResourceGroup
 
-リソースグループの一覧表示。
+リソースグループの一覧表示。  
+
+:link: [Get-AzResourceGroup (Az.Resources) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.resources/get-azresourcegroup)  
 
 ```powershell
 Get-AzResourceGroup
