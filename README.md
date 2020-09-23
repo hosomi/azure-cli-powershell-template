@@ -12,11 +12,14 @@ Azure CLI(AZ), Azure PowerShell.
 
 ## Types
 
-| Type                                      | Azure CLI                       | Azure PowerShell(Az モジュール)                | AzureRM (``*1 非推奨``)
-| ----------------------------------------- | ------------------------------- | ---------------------------------------------- | ----------------
-| Sign in                                   | [az login](login/az.md)         | [Connect-AzAccount](login/az-powershell.md)    | Login-AzureRmAccount
-| Manage Subscription                       | [az account](account/az.md)     | [Get-AzSubscription, Set-AzContext](account/az-powershell.md) | 
-| Resource Group                            | [az group](group/az.md)         | [Get-AzResourceGroup, New-AzResourceGroup, Remove-AzResourceGroup](group/az-powershell.md) | New-AzureRmResourceGroup
+| Type                                      | Azure CLI                           | Azure PowerShell(Az モジュール)                | AzureRM (``*1 非推奨``)
+| ----------------------------------------- | ----------------------------------- | ---------------------------------------------- | ----------------
+| Sign in                                   | [az login](login/az.md)             | [Connect-AzAccount](login/az-powershell.md)    | Login-AzureRmAccount
+| Manage Subscription                       | [az account](account/az.md)         | [Get-AzSubscription, Set-AzContext](account/az-powershell.md) | 
+| Resource Group                            | [az group](group/az.md)             | [Get-AzResourceGroup, New-AzResourceGroup, Remove-AzResourceGroup](group/az-powershell.md) | New-AzureRmResourceGroup
+| Storage                                   | [az storage account](storage/az.md) | [Get-AzStorageAccount, New-AzStorageAccount, Remove-AzStorageAccount](storage/az-powershell.md) | Get-AzureRmStorageAccount
+
+
 
 
 
