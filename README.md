@@ -8,7 +8,7 @@ Azure CLI(AZ), Azure PowerShell AZ.
 
 
 ``*1 非推奨`` [新しい Azure PowerShell Az モジュールの概要 | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/azure/new-azureps-module-az?view=azps-4.6.1)  
-`` :link: `` マークは公式ドキュメントへのリンク、 マークが無いものは当リポジトリ内のリンクです。  
+``*`` :link: マークは公式ドキュメントへのリンク、 マークが無いものは当リポジトリ内のリンクです。  
 
 ## Types
 
