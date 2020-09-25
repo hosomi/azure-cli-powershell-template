@@ -15,14 +15,14 @@ Azure CLI(AZ), Azure PowerShell AZ.
 個人的によく使う一覧。   
 また、AzureRM（Azure PowerShell RM）から Azure CLI 及び、Azure PowerShell AZ に移行する参考にしてください。  
 
-
-| Type                                      | Azure CLI                                   | Azure PowerShell(Az モジュール)                | AzureRM (``*1 非推奨``)
-| ----------------------------------------- | ------------------------------------------- | ---------------------------------------------- | ----------------
-| Sign in                                   | [az login](login/az.md)                     | [Connect-AzAccount](login/az-powershell.md)    | Login-AzureRmAccount
-| Manage Subscription                       | [az account](account/az.md)                 | [Get-AzSubscription, Set-AzContext](account/az-powershell.md) | Get-AzureRmSubscription, Select-AzureRmSubscription, Get-AzureRmContext
-| Resource Group                            | [az group](group/az.md)                     | [Get-AzResourceGroup, New-AzResourceGroup, Remove-AzResourceGroup](group/az-powershell.md) | New-AzureRmResourceGroup
-| Storage                                   | [az storage account](storage/az.md)         | [Get-AzStorageAccount, New-AzStorageAccount, Remove-AzStorageAccount](storage/az-powershell.md) | Get-AzureRmStorageAccount 
-| App Service Plan                          | [az appservice plan](appservice-plan/az.md) | [New-AzAppServicePlan, Get-AzAppServicePlan, Set-AzAppServicePlan, Remove-AzAppServicePlan](appservice-plan/az-powershell.md) | New-AzureRmAppServicePlan, Get-AzureRmAppServicePlan, Set-AzureRmAppServicePlan, Remove-AzureRmAppServicePlan
+| Type                | Azure CLI                                   | Azure PowerShell(Az module)                           | AzureRM (``*1 非推奨``)
+| --------------------| ------------------------------------------- | ----------------------------------------------------- | -----------------------------------
+| Sign in             | [az login](login/az.md)                     | [Connect-AzAccount](login/az-powershell.md)           | Login-AzureRmAccount
+| Manage Subscription | [az account](account/az.md)                 | [AzSubscription, AzContext](account/az-powershell.md) | AzureRmSubscription, AzureRmContext
+| Resource Group      | [az group](group/az.md)                     | [AzResourceGroup](group/az-powershell.md)             | AzureRmResourceGroup
+| Storage             | [az storage account](storage/az.md)         | [AzStorageAccount](storage/az-powershell.md)          | AzureRmStorageAccount 
+| App Service Plan    | [az appservice plan](appservice-plan/az.md) | [AzAppServicePlan](appservice-plan/az-powershell.md)  | AzureRmAppServicePlan
+| Web Apps            | [az appservice](webapp/az.md)               | [AzWebApp, AzWebAppSlot](webapp/az-powershell.md)     | AzureRmWebApp
 
 
 
