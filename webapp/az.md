@@ -110,24 +110,179 @@ az webapp deployment slot swap \
   --target-slot <target-slot> # production
 ```
 
+---
 
+### az webapp config
 
+Web App の構成設定の管理。  
+アプリケーション設定（appsettings）の項目を記載。  
 
+:link: [az webapp config appsettings | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/appsettings)  
 
-　  
-　  
-　  
-　  
-　  
+複数のデプロイスロット構成で ``--slot`` 引数の指定が無い場合、 ``production`` 本番スロットになります。  
 
-* * *
+#### az webapp config appsettings set
 
-###### :copyright: 商標について
+アプリケーション設定（appsettings）の追加及び更新。  
 
-<sup>当ドキュメントに記載されている会社名、システム名、製品名は一般に各社の登録商標または商標です。</sup>  
-<sup>なお、本文および図表中では、「™」、「®」は明記しておりません。</sup>  
+:link: [az webapp config appsettings #set | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_set)  
 
-###### 免責事項  
-<sup>当ドキュメント上の掲載内容については細心の注意を払っていますが、その情報に関する信頼性、正確性、完全性について保証するものではありません。</sup>  
-<sup>掲載された内容の誤り、および掲載された情報に基づいて行われたことによって生じた直接的、また間接的トラブル、損失、損害については、筆者は一切の責任を負いません。</sup>  
-<sup>また当ドキュメント、およびドキュメントに含まれる情報、コンテンツは、通知なしに随時変更されます。</sup>  
+```bash
+az webapp config appsettings set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --settings <settings> # 名前=値（WEBSITE_TIME_ZONE="Tokyo Standard Time"）スペースがある場合、”（ダブルクウォート）で囲ってください。
+```
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config appsettings set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --settings <settings> # 名前=値（WEBSITE_TIME_ZONE="Tokyo Standard Time"）スペースがある場合、”（ダブルクウォート）で囲ってください。
+```
+
+デプロイスロット設定（スロット固定）が必要な場合、`--settings` から `--slot-settings` に変更してください。  
+
+```bash
+az webapp config appsettings set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --slot-settings <settings> # 名前=値（WEBSITE_TIME_ZONE="Tokyo Standard Time"）スペースがある場合、”（ダブルクウォート）で囲ってください。
+```
+
+#### az webapp config appsettings list
+
+アプリケーション設定（appsettings）の一覧表示。  
+
+:link: [az webapp config appsettings #list | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_list)  
+
+```bash
+az webapp config appsettings list \
+  --resource-group <resource-group> \
+  --name <name> 
+```
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config appsettings list \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> # staging, production
+```
+
+#### az webapp config appsettings delete
+
+アプリケーション設定（appsettings）の削除。  
+
+:link: [az webapp config appsettings #delete | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/appsettings#az_webapp_config_appsettings_delete)  
+
+```bash
+az webapp config appsettings delete \
+  --resource-group <resource-group> \
+  --name <name> \
+  --setting-names <setting-names> # WEBSITE_TIME_ZONE..
+``` 
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config appsettings delete \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --setting-names <setting-names> # WEBSITE_TIME_ZONE..
+``` 
+
+### az webapp config connection-string
+
+Web App の構成設定の管理。  
+接続文字列（connection-string）の項目を記載。  
+
+:link: [az webapp config connection-string | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/connection-string)  
+
+複数のデプロイスロット構成で ``--slot`` 引数の指定が無い場合、 ``production`` 本番スロットになります。  
+
+#### az webapp config connection-string set
+
+接続文字列（connection-string）の追加及び更新。  
+
+:link: [az webapp config connection-string #set | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/connection-string#az_webapp_config_connection_string_set)  
+
+```bash
+az webapp config connection-string set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --connection-string-type <connection-string-type> \ # SQLServer, SQLAzure, MySql, PostgreSQL, RedisCache
+  --settings # "DatabaseConnectionString='Server=tcp:...;'"
+```
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config connection-string set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --connection-string-type <connection-string-type> \ # SQLServer, SQLAzure, MySql, PostgreSQL, RedisCache
+  --settings # "DatabaseConnectionString='Server=tcp:...;'"
+```
+
+デプロイスロット設定（スロット固定）が必要な場合、`--settings` から `--slot-settings` に変更してください。  
+
+```bash
+az webapp config connection-string set \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --connection-string-type <connection-string-type> \ # SQLServer, SQLAzure, MySql, PostgreSQL, RedisCache
+  --slot-settings # "DatabaseConnectionString='Server=tcp:...;'"
+```
+
+#### az webapp config connection-string list
+
+接続文字列（connection-string）の一覧表示。  
+
+:link: [az webapp config connection-string #list | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/connection-string#az_webapp_config_connection_string_list)  
+
+```bash
+az webapp config connection-string list \
+  --resource-group <resource-group> \
+  --name <name> 
+```
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config connection-string list \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> # staging, production
+```
+
+#### az webapp config connection-string delete
+
+接続文字列（connection-string）の削除。  
+
+:link: [az webapp config connection-string #delete | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/config/connection-string#az_webapp_config_connection_string_delete)  
+
+```bash
+az webapp config connection-string delete \
+  --resource-group <resource-group> \
+  --name <name> \
+  --setting-names <setting-names> # WEBSITE_TIME_ZONE..
+``` 
+
+デプロイスロットの指定が必要な場合、`--slot` 引数を付与してください。  
+
+```bash
+az webapp config connection-string delete \
+  --resource-group <resource-group> \
+  --name <name> \
+  --slot <slot> \ # staging, production
+  --setting-names <setting-names> # WEBSITE_TIME_ZONE..
+```
