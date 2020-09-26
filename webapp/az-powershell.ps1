@@ -30,6 +30,37 @@ Restart-AzWebApp `
   -ResourceGroupName "<ResourceGroupName>" `
   -Name "<Name>"
 
+# Web App の構成設定を管理。  
+# Case1. アプリケーション設定を構成する。  
+#`追加ではなく置き換えなので注意！
+$hash = @{}
+$hash['WEBSITE_TIME_ZONE'] = "Tokyo Standard Time"
+
+Set-AzWebApp `
+  -ResourceGroupName "<ResourceGroupName>" `
+  -Name "<Name>" `
+  -AppSettings $hash # Hashtable の変数を利用。
+
+
+# 追加及び更新したい場合は ``Get-AzWebApp`` と組合せて実行してください。  
+$webApp = Get-AzWebApp `
+  -ResourceGroupName "<ResourceGroupName>" `
+  -Name "<Name>" 
+  
+$appSettings = $webApp.SiteConfig.AppSettings
+  
+$hash = @{}
+ForEach ($appSetting in $appSettings) {
+  $hash[$appSetting.Name] = $appSetting.Value
+}
+  
+$hash['WEBSITE_TIME_ZONE'] = "Tokyo Standard Time"
+  
+Set-AzWebApp `
+  -ResourceGroupName "<ResourceGroupName>" `
+  -Name "<Name>" `
+  -AppSettings $hash
+
 # ---
 
 # Slot
