@@ -24,12 +24,13 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | App Service Plan    | [az appservice plan](appservice-plan/az.md) | [AzAppServicePlan](appservice-plan/az-powershell.md)  | AzureRmAppServicePlan
 | Web App             | [az appservice](webapp/az.md)               | [AzWebApp, AzWebAppSlot](webapp/az-powershell.md)     | AzureRmWebApp, AzureRmWebAppSlot
 
+---
 
+## Types matrix
 
-
-
-
-
+| Content                   | Azure CLI                              | Azure PowerShell(Az module)   | AzureRM (``*1 非推奨``)
+| --------------------------| -------------------------------------- | ----------------------------- | -----------------------------------
+| サインイン                | [az login](login/az.md#az login)        | Connect-AzAccount             | Login-AzureRmAccount
 
 
 
