@@ -30,7 +30,7 @@ Azure CLI(AZ), Azure PowerShell AZ.
 
 | Content                   | Azure CLI                              | Azure PowerShell(Az module)   | AzureRM (``*1 非推奨``)
 | --------------------------| -------------------------------------- | ----------------------------- | -----------------------------------
-| サインイン                | [az login](login/az.md#az login)        | Connect-AzAccount             | Login-AzureRmAccount
+| サインイン                | [az login](login/az.md#az-login)        | Connect-AzAccount             | Login-AzureRmAccount
 
 
 
