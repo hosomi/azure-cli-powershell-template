@@ -83,6 +83,18 @@ Web App デプロイスロットの管理。
 
 :link: [az webapp deployment slot | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/deployment/slot)  
 
+#### az webapp deployment slot list
+
+Web App デプロイスロットの一覧表示。  
+
+[az webapp deployment slot #list | Microsoft Docs](https://docs.microsoft.com/ja-jp/cli/azure/webapp/deployment/slot#az_webapp_deployment_slot_list)  
+
+```bash
+az webapp deployment slot list \
+  --resource-group <resource-group> \
+  --name <name>
+```
+
 #### az webapp deployment slot create
 
 Web App のデプロイメントスロットを作成します。  
