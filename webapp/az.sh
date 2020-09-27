@@ -33,6 +33,11 @@ az webapp restart  \
 
 # ------
 
+# Web App デプロイスロットの一覧表示。
+az webapp deployment slot list \
+  --resource-group <resource-group> \
+  --name <name>
+
 # Web App のデプロイメントスロットを作成します。
 az webapp deployment slot create \
   --resource-group <resource-group> \
