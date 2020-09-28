@@ -77,6 +77,11 @@ Get-AzWebAppSlot `
   -Name "<Name>" `
   -Slot "<Slot>" # production, staging
 
+# Web App のスロットの一覧表示。
+Get-AzWebAppSlot `
+  -ResourceGroupName "<ResourceGroupName>" `
+  -Name "<Name>"
+
 # Web App のスロットを開始します。  
 Start-AzWebAppSlot `
   -ResourceGroupName "<ResourceGroupName>" `
