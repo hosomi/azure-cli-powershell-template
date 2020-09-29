@@ -49,7 +49,7 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | 作成       | [az group create](group/az.md#az-group-create)   | [New-AzResourceGroup](group/az-powershell.md#New-AzResourceGroup) | New-AzureRmResourceGroup
 | 削除       | [az group delete](group/az.md#az-group-delete)   | [Remove-AzResourceGroup](group/az-powershell.md#Remove-AzResourceGroup) | Remove-AzureRmResource
 
-### ストレージ
+### ストレージアカウント
 
 | Content                   | Azure CLI                                       | Azure PowerShell(Az module)                                       | AzureRM (``*1 非推奨``)
 | --------------------------| ----------------------------------------------- | ----------------------------------------------------------------- | -----------------------------------
