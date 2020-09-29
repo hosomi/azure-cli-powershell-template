@@ -72,7 +72,7 @@ Azure CLI(AZ), Azure PowerShell AZ.
 
 | Content                   | Azure CLI                                       | Azure PowerShell(Az module)                                       | AzureRM (``*1 非推奨``)
 | --------------------------| ----------------------------------------------- | ----------------------------------------------------------------- | -----------------------------------
-| 詳細表示 | [az webapp show](webapp/az.md#az-webapp-show) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebAp) | Get-AzureRmWebApp
+| 詳細表示 | [az webapp show](webapp/az.md#az-webapp-show) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebApp) | Get-AzureRmWebApp
 | 作成 | [az webapp create](webapp/az.md#az-webapp-create) | [New-AzWebApp](webapp/az-powershell.md#Get-AzWebAp#New-AzWebApp) | New-AzureRmWebApp
 | 開始 | [az webapp start](webapp/az.md#az-webapp-start) | [Start-AzWebApp](webapp/az-powershell.md#Start-AzWebApp) | Start-AzureRmWebApp
 | 停止 | [az webapp stop](webapp/az.md#az-webapp-stop) | [Stop-AzWebApp](webapp/az-powershell.md#Stop-AzWebApp) | Stop-AzureRmWebApp
@@ -83,10 +83,10 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | スロット開始 | [az webapp start --slot](webapp/az.md#az-webapp-start) | [Start-AzWebAppSlot](webapp/az-powershell.md#Start-AzWebAppSlot) | Start-AzureRmWebAppSlot
 | スロット停止 | [az webapp stop --slot](webapp/az.md#az-webapp-stop) | [Stop-AzWebAppSlot](webapp/az-powershell.md#Stop-AzWebAppSlot) | Stop-AzureRmWebAppSlot
 | スロット再起動 | [az webapp restart --slot](webapp/az.md#az-webapp-restart) | [Restart-AzWebAppSlot](webapp/az-powershell.md#Restart-AzWebAppSlot) | Restart-AzureRmWebAppSlot
-| アプリケーション設定一覧表示 | [az webapp config appsettings list](webapp/az.md#az-webapp-config-appsettings-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebAp) | Get-AzureRmWebApp
+| アプリケーション設定一覧表示 | [az webapp config appsettings list](webapp/az.md#az-webapp-config-appsettings-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebApp) | Get-AzureRmWebApp
 | アプリケーション設定 | [az webapp config appsettings set](webapp/az.md#az-webapp-config-appsettings-set) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
 | アプリケーション設定削除 | [az webapp config appsettings delete](webapp/az.md#az-webapp-config-appsettings-delete) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
-| 接続文字列一覧表示 | [az webapp config connection-string list](webapp/az.md#az-webapp-config-connection-string-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebAp) | Get-AzureRmWebApp
+| 接続文字列一覧表示 | [az webapp config connection-string list](webapp/az.md#az-webapp-config-connection-string-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebApp) | Get-AzureRmWebApp
 | 接続文字列設定 | [az webapp config connection-string set](webapp/az.md#az-webapp-config-connection-string-set) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
 | 接続文字列設定削除 | [az webapp config connection-string delete](webapp/az.md#az-webapp-config-connection-string-delete) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
 
