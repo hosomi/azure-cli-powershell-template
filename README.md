@@ -83,12 +83,12 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | スロット開始 | [az webapp start --slot](webapp/az.md#az-webapp-start) | [Start-AzWebAppSlot](webapp/az-powershell.md#Start-AzWebAppSlot) | Start-AzureRmWebAppSlot
 | スロット停止 | [az webapp stop --slot](webapp/az.md#az-webapp-stop) | [Stop-AzWebAppSlot](webapp/az-powershell.md#Stop-AzWebAppSlot) | Stop-AzureRmWebAppSlot
 | スロット再起動 | [az webapp restart --slot](webapp/az.md#az-webapp-restart) | [Restart-AzWebAppSlot](webapp/az-powershell.md#Restart-AzWebAppSlot) | Restart-AzureRmWebAppSlot
-| アプリケーション設定一覧表示 | [az webapp config appsettings list](webapp/az.md#az-webapp-config-appsettings-list) | Get-AzWebApp | Get-AzureRmWebApp
+| アプリケーション設定一覧表示 | [az webapp config appsettings list](webapp/az.md#az-webapp-config-appsettings-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebAp) | Get-AzureRmWebApp
 | アプリケーション設定 | [az webapp config appsettings set](webapp/az.md#az-webapp-config-appsettings-set) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
-| アプリケーション設定削除 | [az webapp config appsettings delete](webapp/az.md#az-webapp-config-appsettings-delete) | Set-AzWebApp | Set-AzureRmWebApp
-| 接続文字列一覧表示 | [az webapp config connection-string list](webapp/az.md#az-webapp-config-connection-string-list) | Get-AzWebApp | Get-AzureRmWebApp
-| 接続文字列設定 | [az webapp config connection-string set](webapp/az.md#az-webapp-config-connection-string-set) | Set-AzWebApp | Set-AzureRmWebApp
-| 接続文字列設定削除 | [az webapp config connection-string delete](webapp/az.md#az-webapp-config-connection-string-delete) | Set-AzWebApp | Set-AzureRmWebApp
+| アプリケーション設定削除 | [az webapp config appsettings delete](webapp/az.md#az-webapp-config-appsettings-delete) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
+| 接続文字列一覧表示 | [az webapp config connection-string list](webapp/az.md#az-webapp-config-connection-string-list) | [Get-AzWebApp](webapp/az-powershell.md#Get-AzWebAp) | Get-AzureRmWebApp
+| 接続文字列設定 | [az webapp config connection-string set](webapp/az.md#az-webapp-config-connection-string-set) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
+| 接続文字列設定削除 | [az webapp config connection-string delete](webapp/az.md#az-webapp-config-connection-string-delete) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
 
 
 
