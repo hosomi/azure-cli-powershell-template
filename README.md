@@ -23,6 +23,9 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | Storage             | [az storage account](storage/az.md)         | [AzStorageAccount](storage/az-powershell.md)          | AzureRmStorageAccount 
 | App Service Plan    | [az appservice plan](appservice-plan/az.md) | [AzAppServicePlan](appservice-plan/az-powershell.md)  | AzureRmAppServicePlan
 | Web App             | [az appservice](webapp/az.md)               | [AzWebApp, AzWebAppSlot](webapp/az-powershell.md)     | AzureRmWebApp, AzureRmWebAppSlot
+| Functions           | [az functionapp](functions/az.md)           |     | - 
+
+
 
 ---
 
