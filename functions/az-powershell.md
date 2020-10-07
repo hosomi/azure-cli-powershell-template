@@ -51,8 +51,10 @@ New-AzFunctionApp `
 
 ### Get-AzFunctionApp
 
-:link: [Get-AzFunctionApp (Az.Functions) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.functions/get-azfunctionapp)  
+function app の詳細表示。  
 （スロットが 1 つの構成では常に運用スロットになります。）  
+
+:link: [Get-AzFunctionApp (Az.Functions) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.functions/get-azfunctionapp)  
 
 ```powershell
 Get-AzFunctionApp `
