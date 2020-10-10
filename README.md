@@ -24,7 +24,7 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | App Service Plan    | [az appservice plan](appservice-plan/az.md) | [AzAppServicePlan](appservice-plan/az-powershell.md)  | AzureRmAppServicePlan
 | Web App             | [az appservice](webapp/az.md)               | [AzWebApp, AzWebAppSlot](webapp/az-powershell.md)     | AzureRmWebApp, AzureRmWebAppSlot
 | Functions           | [az functionapp](functions/az.md)           | [AzFunctionApp](functions/az-powershell.md)           | - 
-
+| Cloud Services      | -                                           | -                                                     | [AzureDeployment](cloud-service/az-powershell-rm.md)
 
 
 ---
