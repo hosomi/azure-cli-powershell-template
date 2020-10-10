@@ -18,10 +18,14 @@ ResourceGroupName="rg-test2"
 StorageAccountName="hosomistroage"
 
 # 作成する Functions の名前。
-FunctionsName="hosomi-test"
+FunctionsName="hosomitest"
 
 # ==========================================================
 
+
+# -----------------------------------------------------------------
+# main
+# -----------------------------------------------------------------
 echo "--------------------------------------------"
 echo "Location=$Location"
 echo "ResourceGroupName=$ResourceGroupName"
