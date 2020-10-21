@@ -30,12 +30,12 @@ Get-AzFunctionAppAvailableLocation `
   -OSType "Linux"
 ```
 
-### New-AzFunctionAppPlan
+### New-AzFunctionApp
 
 function app の新規作成。  
 （リソース名(`<name>`)は azurewebsites.net で一意でないと作成できません。FQDN: `<name>.azurewebsites.net`）  
 
-:link: [New-AzFunctionAppPlan (Az.Functions) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.functions/new-azfunctionappplan)  
+:link: [New-AzFunctionApp (Az.Functions) | Microsoft Docs](https://docs.microsoft.com/ja-jp/powershell/module/az.functions/new-azfunctionapp)  
 
 ```powershell
 New-AzFunctionApp `

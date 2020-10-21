@@ -94,6 +94,24 @@ Azure CLI(AZ), Azure PowerShell AZ.
 | 接続文字列設定削除 | [az webapp config connection-string delete](webapp/az.md#az-webapp-config-connection-string-delete) | [Set-AzWebApp](webapp/az-powershell.md#Set-AzWebApp) | Set-AzureRmWebApp
 
 
+### Functions
+
+AzureRM (``*1 非推奨``) から操作はできません。  
+接続文字列は webapp と同じモジュールで操作を行います。  
+
+| Content                   | Azure CLI | Azure PowerShell(Az module)                                       
+| --------------------------| --------- | -----------------------------
+| 詳細表示 | [az functionapp show](functions/az.md#az-functionapp-show) | [Get-AzFunctionApp](functions/az-powershell.md#Get-AzFunctionApp)  
+| 作成 | [az functionapp create](functions/az.md#az-functionapp-create) | [New-AzFunctionApp](functions/az-powershell.md#New-AzFunctionApp)  
+| 開始 | [az functionapp start](functions/az.md#az-functionapp-start) | [Start-AzFunctionApp](functions/az-powershell.md#Start-AzFunctionApp)
+| 停止 | [az functionapp stop](functions/az.md#az-functionapp-stop) | [Stop-AzFunctionApp](functions/az-powershell.md#Stop-AzFunctionApp)
+| 再起動 | [az functionapp restart](functions/az.md#az-functionapp-restart) | [Restart-AzFunctionApp](functions/az-powershell.md#Restart-AzFunctionApp)
+| スロット一覧表示 | [az functionapp deployment slot list](functions/az.md#az-functionapp-deployment-slot-list) | 
+| スロット作成 | [az functionapp deployment slot create](functions/az.md#az-functionapp-deployment-slot-create) | 
+| スロットスワップ | [az functionapp deployment slot swap](functions/az.md#az-functionapp-deployment-slot-swap) | 
+| アプリケーション設定一覧表示 | [az functionapp config appsettings list](functions/az.md#az-functionapp-config-appsettings-list) | 
+| アプリケーション設定 | [az functionapp config appsettings set](functions/az.md#az-functionapp-config-appsettings-set) | 
+| アプリケーション設定削除 | [az functionapp config appsettings delete](functions/az.md#az-functionapp-config-appsettings-delete) | 
 
 
 
